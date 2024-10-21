@@ -1,0 +1,24 @@
+/* Set những class chung chung cho toàn trang */
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.pos-rev {
+    position: relative;
+}
+
+.none-a {
+    color: var(--li-color);
+    text-decoration: none;
+}
+
+
+

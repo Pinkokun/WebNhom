@@ -1,0 +1,10 @@
+/* Set màu cho toàn thể trang */
+
+:root {
+    --header-brg: #252525;
+
+    --li-color: white;
+    --right-line-light: #2d2d2d;
+    --right-line-dark: black;
+    --hover-feat: #ADA075;
+}
