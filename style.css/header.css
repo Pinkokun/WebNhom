@@ -14,6 +14,7 @@
 
 .nav-child>a {
     padding: 0 20px;
+    font-weight: bolder;
 }
 
 .logo-container {
@@ -26,8 +27,10 @@
 }
 
 .logo-img {
-    width: 160px;
-    height: 35px;
+    width: 50px;
+    height: 50px;
+    /* height: 159px; */
+    border-radius: 50%;
 }
 
 
@@ -44,11 +47,28 @@
     opacity: 0;
     transition: 0.5s ease;
     z-index: 99;
+    height: 340px;
 }
 
 .subnav-child>a {
     margin-left: 20px;
     padding-right: 60px;
+}
+
+.subnav-child-spec {
+    padding-left: 30px;
+}
+
+/* Show menu phụ */
+.subnav-show {
+    visibility: visible !important;
+    opacity: 1 !important;
+}
+
+/* Hidden menu phụ */
+.subnav-hidden {
+    visibility: hidden;
+    opacity: 0;
 }
 
 .subnav-1 {
@@ -60,16 +80,11 @@
     padding: 20px 10px;
     background-color: var(--header-brg);
     list-style: none;
-    z-index: 1;
     text-align: center;
     display: grid;
     grid-template-columns: auto auto;
     align-items: flex-start;
     border-left: 2px solid var(--right-line-dark);
-}
-
-.width-spec {
-    width: 200%;
 }
 
 .subnav-spec {
@@ -84,6 +99,7 @@
     width: 80vw !important;
     display: grid;
     grid-template-columns: auto auto auto auto;
+
 }
 
 .subnav-spec-child {
@@ -99,7 +115,10 @@
 .subnav-spec-img {
     width: 100%;
     height: 140px;
+    transition: 3s ease;
+
 }
+
 
 .subnav-spec-title {
     font-size: 16px;
@@ -111,11 +130,27 @@
     margin-bottom: 10px;
 }
 
+.block-img {
+    width: 320px;
+    height: 140px;
+    overflow: hidden;
+}
 
 
 
 
 /* HOVER ZONE */
+
+.logo-img:hover {
+    scale: 130%;
+    border: 2px solid var(--gray-color);
+
+}
+
+.subnav-spec-img:hover {
+    scale: 120%;
+}
+
 
 .nav-child:hover .subnav,
 .nav-child:hover .subnav-spec {
@@ -127,7 +162,10 @@
     color: var(--hover-feat);
 }
 
+.subnav-1-child:hover>a {
+    border-bottom: 2px solid var(--li-color);
 
+}
 
 /* END OF HOVER ZONE */
 
