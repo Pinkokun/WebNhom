@@ -59,6 +59,12 @@
     padding-left: 30px;
 }
 
+.search-child {
+    border: 1px solid white;
+    padding: 10px 130px 10px 10px;
+    border-radius: 10px;
+}
+
 /* Show menu phụ */
 .subnav-show {
     visibility: visible !important;
@@ -158,6 +164,10 @@
     opacity: 1;
 }
 
+.nav-child:hover>a {
+    color: var(--hover-feat);
+}
+
 .feature-child:hover a {
     color: var(--hover-feat);
 }
@@ -166,6 +176,13 @@
     border-bottom: 2px solid var(--li-color);
 
 }
+
+.feature-child:hover .icons-size {
+    transform: translateY(-10px);
+    transition: all 0.3s linear;
+}
+
+
 
 /* END OF HOVER ZONE */
 
@@ -212,6 +229,31 @@
     background-color: var(--black-color);
     color: var(--gray-color);
 
+}
+
+
+
+.sign-btn>.icon-1 {
+    position: absolute;
+    width: 5%;
+    top: 10px;
+    right: 20px;
+    color: #2F5C2F;
+    transform-origin: 100% 100%;
+    transform: rotate(-25deg) translateX(120%) translateY(20%);
+    z-index: -1;
+    transition: all 0.5s;
+}
+
+.sign-btn>.icon-2 {
+    position: absolute;
+    width: 5%;
+    top: 20px;
+    left: 10px;
+    color: #2F5C2F;
+    transform-origin: 100% 100%;
+    z-index: -1;
+    transition: all 0.5s;
 }
 
 select,
