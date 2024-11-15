@@ -2,6 +2,8 @@
     width: 100%;
     height: 85px;
     background-color: var(--header-brg);
+    /* position: fixed;
+    z-index: 2; */
 }
 
 .navbar-container,
