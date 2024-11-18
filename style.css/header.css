@@ -63,7 +63,8 @@
 
 .search-child {
     border: 1px solid white;
-    padding: 10px 130px 10px 10px;
+    padding: 5px;
+    margin: 0 10px;
     border-radius: 10px;
 }
 
@@ -305,4 +306,27 @@ select,
 .icons-size {
     font-size: 40px;
     padding-bottom: 10px;
+}
+
+
+
+
+.search-form {
+    margin: 0 20px;
+}
+
+.search-btn {
+    padding: 5px 5px;
+    text-align: start;
+    border-radius: 20px;
+    background-color: var(--header-brg);
+    color: var(--li-color);
+
+}
+
+.search-icon {
+    position: absolute;
+    right: 35px;
+    top: 36px;
+    color: var(--li-color);
 }

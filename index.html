@@ -24,7 +24,9 @@
             <div class="navbar-container">
                 <div class="logo-container">
                     <img class="logo-img" src="image/header img/Screenshot 2024-11-08 205924.png" alt="">
+
                 </div>
+
                 <ul class="navbar">
                     <li class="nav-child pos-rev"><a class="none-a" href="">Trang chủ</a></li>
                     <li class="nav-child pos-rev"><a class="none-a" href="#loveplace">Điểm đến</a>
@@ -88,48 +90,6 @@
                     <li class="nav-child"><a class="none-a" href="#experienceplace">Trải nghiệm</a></li>
                     <li class="nav-child"><a class="none-a" href="#aboutus">Về chúng tôi</a></li>
 
-                    <!-- <li class="nav-child pos-rev"><a class="none-a" href="">Điểm đến</a>
-                        <ul class="subnav">
-                            <li class="subnav-child pos-rev "><a class="none-a" href="">Bắc</a>
-                                <ul class="subnav-1">
-                                    <li class="subnav-1-child "><a class="none-a" href="">Hà Nội</a></li>
-                                    <li class="subnav-1-child"><a class="none-a" href="">Cao Bằng</a></li>
-                                    <li class="subnav-1-child"><a class="none-a" href="">Lạng Sơn</a></li>
-                                    <li class="subnav-1-child"><a class="none-a" href="">Hải Phòng</a></li>
-                                    <li class="subnav-1-child"><a class="none-a" href="">Hà Giang</a></li>
-                                    <li class="subnav-1-child"><a class="none-a" href="">Thái Nguyên</a></li>
-                                </ul>
-                            </li>
-                            <li class="subnav-child"><a class="none-a" href="">Trung</a>
-                                <ul class="subnav-1 subnav-hidden">
-                                    <li class="subnav-1-child"><a class="none-a" href="">Đà Nẵng</a></li>
-                                    <li class="subnav-1-child"><a class="none-a" href="">Bình Thuận</a></li>
-                                    <li class="subnav-1-child"><a class="none-a" href="">Khánh Hòa</a></li>
-                                    <li class="subnav-1-child"><a class="none-a" href="">Quảng Bình</a></li>
-                                    <li class="subnav-1-child"><a class="none-a" href="">Quảng Nam</a></li>
-                                    <li class="subnav-1-child"><a class="none-a" href="">Quảng Ngãi</a></li>
-                                    <li class="subnav-1-child"><a class="none-a" href="">Quảng Trị</a></li>
-                                    <li class="subnav-1-child"><a class="none-a" href="">Thừa Thiên Huế</a></li>
-                                </ul>
-
-                            </li>
-
-                            <li class="subnav-child "><a class="none-a" href="">Nam</a>
-                                <ul class="subnav-1  subnav-hidden">
-                                    <li class="subnav-1-child"><a class="none-a" href="">TP.Hồ Chí Minh</a></li>
-                                    <li class="subnav-1-child"><a class="none-a" href="">Bạc Liêu</a></li>
-                                    <li class="subnav-1-child"><a class="none-a" href="">Cà Mau</a></li>
-                                    <li class="subnav-1-child"><a class="none-a" href="">Cần Thơ</a></li>
-                                    <li class="subnav-1-child"><a class="none-a" href="">Kiên Giang</a></li>
-                                    <li class="subnav-1-child"><a class="none-a" href="">Sóc Trăng</a></li>
-                                    <li class="subnav-1-child"><a class="none-a" href="">Tây Ninh</a></li>
-                                    <li class="subnav-1-child"><a class="none-a" href="">Vũng Tàu</a></li>
-
-                                </ul>
-                            </li>
-                        </ul>
-                    </li> -->
-
                     <li class="nav-child"><a class="none-a" href="">
                             <i class="ti-user"></i>
                         </a></li>
@@ -137,9 +97,12 @@
                             <i class="ti-shopping-cart">
                             </i>
                         </a></li>
-                    <li class="nav-child "><a class="none-a" href="">
-                            <i class="ti-search search-child"></i>
-                        </a></li>
+                    <li class="nav-child ">
+                        <div class="search-form par-text">
+                            <input class="search-btn" type="text" placeholder="Tìm kiếm">
+                            <i class="search-icon ti-search"></i>
+                        </div>
+                    </li>
                 </ul>
             </div>
 
@@ -147,59 +110,7 @@
         <div class="banner pos-rev">
             <img class="banner-brg" src="image/header img/du-lich-sai-gon-topbanner.jpeg" alt="">
 
-            <!-- <div class="form-home">
-                <div class="form-container">
-                    <div class="form-box">
-                        <p>Điểm đến</p>
-                        <select name="find-destination" id="find-destination">
-                            <option class="form-li" value="1">TP.Hồ Chí Minh</option>
-                            <option class="form-li" value="2">TP.Hà Nội</option>
-                            <option class="form-li" value="3">TP.Đà Nẵng</option>
-                            <option class="form-li" value="4">TP.Huế</option>
-                            <option class="form-li" value="5">TP.Cần Thơ</option>
-                        </select>
-                    </div>
 
-                    <div class="form-box">
-                        <p>Hoạt động</p>
-                        <select name="find-activity" id="find-activity">
-                            <option class="form-li" value="1">Tham quan</option>
-                            <option class="form-li" value="2">Leo núi</option>
-                            <option class="form-li" value="3">Nhảy Bungle</option>
-                            <option class="form-li" value="4">Chèo thuyền</option>
-                            <option class="form-li" value="5">Xe máy địa hình</option>
-                            <option class="form-li" value="6">Lặn ngắm san hô</option>
-
-                        </select>
-                    </div>
-
-                    <div class="form-box">
-                        <p>Tháng</p>
-                        <select name="find-date" id="find-date">
-                            <option class="form-li" value="1">Tháng 1</option>
-                            <option class="form-li" value="2">Tháng 2</option>
-                            <option class="form-li" value="3">Tháng 3</option>
-                            <option class="form-li" value="4">Tháng 4</option>
-                            <option class="form-li" value="5">Tháng 5</option>
-                            <option class="form-li" value="6">Tháng 6</option>
-                            <option class="form-li" value="7">Tháng 7</option>
-                            <option class="form-li" value="8">Tháng 8</option>
-                            <option class="form-li" value="9">Tháng 9</option>
-                            <option class="form-li" value="10">Tháng 10</option>
-                            <option class="form-li" value="11">Tháng 11</option>
-                            <option class="form-li" value="12">Tháng 12</option>
-
-
-
-                        </select>
-                    </div>
-                    
-                    <div class="form-box">
-                        <input class="form-btn form-pad" type="submit" name="submitbtn" id="submitbtn" value="Đặt vé">
-                
-                    </div>
-                </div>
-            </div> -->
 
             <div class="feature-bar">
                 <ul class="feature-container">
@@ -210,28 +121,28 @@
                             <p>Nhảy Bunngle</p>
                         </a>
                     </li>
-                    <li class="feature-child"><a class="none-a" href="">
+                    <li class="feature-child"><a class="none-a" href="#loveplace">
                             <i class="icons-size fa-solid fa-city"></i>
                             <p>Tham quan</p>
                         </a></li>
-                    <li class="feature-child"><a class="none-a" href="">
+                    <li class="feature-child"><a class="none-a" href="#loveplace">
                             <i class="icons-size fa-solid fa-person-hiking"></i>
                             <p>Leo núi</p>
                         </a></li>
 
-                    <li class="feature-child"><a class="none-a" href="">
+                    <li class="feature-child"><a class="none-a" href="#loveplace">
                             <i class="icons-size fa-solid fa-person-biking"></i>
                             <p>Xe máy địa hình</p>
                         </a></li>
-                    <li class="feature-child"><a class="none-a" href="">
+                    <li class="feature-child"><a class="none-a" href="#loveplace">
                             <i class="icons-size fa-solid fa-sailboat"></i>
                             <p>Chèo thuyền</p>
                         </a></li>
-                    <li class="feature-child"><a class="none-a" href="">
+                    <li class="feature-child"><a class="none-a" href="#loveplace">
                             <i class="icons-size fa-solid fa-person-swimming"></i>
                             <p>Lặn ngắm san hô</p>
                         </a></li>
-                    <li class="feature-child"><a class="none-a" href="">
+                    <li class="feature-child"><a class="none-a" href="#loveplace">
                             <i class="icons-size fa-solid fa-hippo"></i>
                             <p>Tours Safari</p>
                         </a></li>
@@ -253,63 +164,63 @@
                     <div class="content-adventure">
                         <div class="photo-adventure">
                             <div class="photo-card">
-                                <img src="./images/vqg.jpeg" alt="Vườn quốc gia Cát Tiên">
+                                <img src="./image/content img/vqg.jpeg" alt="Vườn quốc gia Cát Tiên">
                                 <div class="infor-card">
                                     <i class="fa-solid fa-person-walking"></i>
                                     <p>Vườn quốc gia</p>
                                 </div>
                             </div>
                             <div class="photo-card">
-                                <img src="./images/khubaoton.jpg" alt="Sơn Trà">
+                                <img src="./image/content img/khubaoton.jpg" alt="Sơn Trà">
                                 <div class="infor-card">
                                     <i class="fa-solid fa-person-walking"></i>
                                     <p>khu bảo tồn</p>
                                 </div>
                             </div>
                             <div class="photo-card">
-                                <img src="./images/Ngam-San-Ho-O-Cu-Lao.jpg" alt="Cù Lao">
+                                <img src="./image/content img/Ngam-San-Ho-O-Cu-Lao.jpg" alt="Cù Lao">
                                 <div class="infor-card">
                                     <i class="fa-solid fa-person-walking"></i>
                                     <p>rạn san hô</p>
                                 </div>
                             </div>
                             <div class="photo-card">
-                                <img src="./images/hang.jpeg" alt="hang sơn đòong">
+                                <img src="./image/content img/hang.jpeg" alt="hang sơn đòong">
                                 <div class="infor-card">
                                     <i class="fa-solid fa-person-walking"></i>
                                     <p>hang động</p>
                                 </div>
                             </div>
                             <div class="photo-card">
-                                <img src="./images/nuocnong.jpg" alt="suối nước nóng">
+                                <img src="./image/content img/nuocnong.jpg" alt="suối nước nóng">
                                 <div class="infor-card">
                                     <i class="fa-solid fa-person-walking"></i>
                                     <p>suối nước nóng</p>
                                 </div>
                             </div>
                             <div class="photo-card">
-                                <img src="./images/hcm.jpg" alt="nhà chủ tịch Hồ Chí Minh">
+                                <img src="./image/content img/hcm.jpg" alt="nhà chủ tịch Hồ Chí Minh">
                                 <div class="infor-card">
                                     <i class="fa-solid fa-person-walking"></i>
                                     <p>Di tích</p>
                                 </div>
                             </div>
                             <div class="photo-card">
-                                <img src="./images/songcuulong.jpg" alt="Cửu Long">
+                                <img src="./image/content img/songcuulong.jpg" alt="Cửu Long">
                                 <div class="infor-card">
                                     <i class="fa-solid fa-person-walking"></i>
                                     <p>Đồng bằng</p>
                                 </div>
                             </div>
                             <div class="photo-card">
-                                <img src="./images/hàgiang.jpg" alt="Hà Giang">
+                                <img src="./image/content img/hàgiang.jpg" alt="Hà Giang">
                                 <div class="infor-card">
                                     <i class="fa-solid fa-person-walking"></i>
                                     <p>Cao nguyên</p>
                                 </div>
                             </div>
                             <div class="photo-card">
-                                <img src="./images/nuidoi.jpg" alt="núi đôi">
+                                <img src="./image/content img/nuidoi.jpg" alt="núi đôi">
                                 <div class="infor-card">
                                     <i class="fa-solid fa-person-walking"></i>
                                     <p>Đồi núi</p>
@@ -322,7 +233,7 @@
                                 tận hưởng từng khoảnh khắc trên con đường của mình, vượt qua những thử thách để trở nên
                                 mạnh mẽ và trưởng thành hơn.</p>
                             <!-- <button>explore</button> -->
-                            <button>Khám phá ngay
+                            <button class="info-btn">Khám phá ngay
                                 <div class="icon-1">
                                     <svg xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 58.56 116.18"
                                         style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
@@ -368,7 +279,7 @@
                     <div class="content-tour">
                         <div class="card-tour">
                             <div class="photo-tour">
-                                <img src="./images/hl1.jpg" alt="">
+                                <img src="./image/content img/hl1.jpg" alt="">
                                 <div class="time-tour">2 Ngày 1 Đêm</div>
                                 <div class="learn-tour">
                                     <div class="star-tour">
@@ -398,7 +309,7 @@
                         </div>
                         <div class="card-tour">
                             <div class="photo-tour">
-                                <img src="./images/hue1.jpg" alt="">
+                                <img src="./image/content img/hue1.jpg" alt="">
                                 <div class="time-tour">1 Ngày</div>
                                 <div class="learn-tour">
                                     <div class="star-tour">
@@ -430,7 +341,7 @@
                         </div>
                         <div class="card-tour">
                             <div class="photo-tour">
-                                <img src="./images/dao-phu-quoc.jpg" alt="">
+                                <img src="./image/content img/dao-phu-quoc.jpg" alt="">
                                 <div class="time-tour">3 Ngày 2 Đêm</div>
                                 <div class="learn-tour">
                                     <div class="star-tour">
@@ -461,7 +372,7 @@
                         </div>
                         <div class="card-tour">
                             <div class="photo-tour">
-                                <img src="./images/cantho1.jpg" alt="">
+                                <img src="./image/content img/cantho1.jpg" alt="">
                                 <div class="time-tour">3 Ngày 2 Đêm</div>
                                 <div class="learn-tour">
                                     <div class="star-tour">
@@ -491,7 +402,7 @@
                         </div>
                         <div class="card-tour">
                             <div class="photo-tour">
-                                <img src="./images/dalat.jfif" alt="">
+                                <img src="./image/content img/dalat.jfif" alt="">
                                 <div class="time-tour">4 Ngày 3 Đêm</div>
                                 <div class="learn-tour">
                                     <div class="star-tour">
@@ -522,7 +433,7 @@
                         </div>
                         <div class="card-tour">
                             <div class="photo-tour">
-                                <img src="./images/fanssi.webp" alt="">
+                                <img src="./image/content img/fanssi.webp" alt="">
                                 <div class="time-tour">3 Ngày 2 Đêm</div>
                                 <div class="learn-tour">
                                     <div class="star-tour">
@@ -588,7 +499,7 @@
                 <div class="wrap-service">
                     <div class="card-service cs1">
                         <div class="img-service">
-                            <img src="./images/tay-bac.jpg" alt="">
+                            <img src="./image/content img/tay-bac.jpg" alt="">
                         </div>
                         <div class="infor-service">
                             <h3>Quốc lộ 32 - Cung đường xuyên Tây Bắc</h3>
@@ -596,12 +507,12 @@
                                 phá văn hóa, đời sống của các dân tộc thiểu số ở vùng cao Tây Bắc. Những bản làng Mông,
                                 Dao, Thái nằm rải rác bên đường sẽ mang đến cho bạn trải
                                 nghiệm du lịch đậm nét văn hóa bản địa</p>
-                            <button>Khám phá</button>
+
                         </div>
                     </div>
                     <div class="card-service cs2">
                         <div class="img-service">
-                            <img src="./images/deo-ma-pi-leng.jpg" alt="">
+                            <img src="./image/content img/deo-ma-pi-leng.jpg" alt="">
                         </div>
                         <div class="infor-service">
                             <h3>Cung đường đèo Mã Pí Lèng</h3>
@@ -610,7 +521,7 @@
                                 Văn và Mèo Vạc, đi qua dãy núi đá vôi hiểm trở của cao
                                 nguyên đá Đồng Văn. Từ đỉnh đèo, du khách có thể phóng tầm mắt chiêm ngưỡng dòng sông
                                 Nho Quế xanh ngắt uốn lượn giữa thung lũng sâu hun hút.</p>
-                            <button>Khám phá</button>
+
                         </div>
                     </div>
                 </div>
@@ -631,7 +542,7 @@
                     <div class="content-seller">
                         <div class="card-seller">
                             <div class="photo-seller">
-                                <img src="./images/hiils.jpg" alt="">
+                                <img src="./image/content img/hiils.jpg" alt="">
                                 <div class="time-seller">Sale</div>
                             </div>
                             <div class="infor-seller">
@@ -670,7 +581,7 @@
                         </div>
                         <div class="card-seller">
                             <div class="photo-seller">
-                                <img src="./images/Sun-World-Ba-Den-02.jpg" alt="">
+                                <img src="./image/content img/Sun-World-Ba-Den-02.jpg" alt="">
                                 <div class="time-seller">Sale</div>
                             </div>
                             <div class="infor-seller">
@@ -709,7 +620,7 @@
                         </div>
                         <div class="card-seller">
                             <div class="photo-seller">
-                                <img src="./images/bai-bien-nha-trang-4.jpg" alt="">
+                                <img src="./image/content img/bai-bien-nha-trang-4.jpg" alt="">
                                 <div class="time-seller">Sale</div>
                             </div>
                             <div class="infor-seller">
@@ -750,7 +661,7 @@
                         </div>
                         <div class="card-seller">
                             <div class="photo-seller">
-                                <img src="./images/cay-thong-co-don-da-lat-750x469.png" alt="">
+                                <img src="./image/content img/cay-thong-co-don-da-lat-750x469.png" alt="">
                                 <div class="time-seller">Sale</div>
                             </div>
                             <div class="infor-seller">
@@ -790,7 +701,7 @@
                         </div>
                         <div class="card-seller">
                             <div class="photo-seller">
-                                <img src="./images/phan-thiet-4.jpg" alt="">
+                                <img src="./image/content img/phan-thiet-4.jpg" alt="">
                                 <div class="time-seller">Sale</div>
                             </div>
                             <div class="infor-seller">
@@ -828,7 +739,7 @@
                         </div>
                         <div class="card-seller">
                             <div class="photo-seller">
-                                <img src="./images/condao.jfif" alt="">
+                                <img src="./image/content img/condao.jfif" alt="">
                                 <div class="time-seller">Sale</div>
                             </div>
                             <div class="infor-seller">
@@ -851,7 +762,7 @@
                                     <p>Côn Đảo là một quần đảo nằm ở phía Nam Việt Nam, không chỉ là một địa điểm du
                                         lịch tuyệt vời mà còn là một kho tàng lịch sử và văn hóa vô giá. Với vẻ đẹp
                                         hoang sơ, bãi biển trong xanh và những di tích lịch sử đầy xúc động</p>
-                                    <button>Đặt ngay</button>
+                                    <button class="hvr-sweep-to-right buy-ticket js-buy-ticket">Đặt ngay</button>
                                 </div>
                                 <div class="price-seller">
                                     <div class="price">
@@ -878,8 +789,8 @@
                         </p>
                     </div>
                     <div class="content-guides">
-                        <div class="card-guides tours-guide-pic">
-                            <img src="./images/khoaiwebp.webp" alt="">
+                        <div class="card-guides tours-guide-image/footer img">
+                            <img src="./image/content img/khoaiwebp.webp" alt="">
                             <div class="contact-guides">
                                 <a href=""><i class="fa-brands fa-facebook-f"></i></a>
                                 <a href=""><i class="fa-brands fa-twitter"></i></a>
@@ -890,7 +801,7 @@
                             </div>
                         </div>
                         <div class="card-guides tours-guide-pic">
-                            <img src="./images/tieuhy.png" alt="">
+                            <img src="./image/content img/tieuhy.png" alt="">
                             <div class="contact-guides">
                                 <a href=""><i class="fa-brands fa-facebook-f"></i></a>
                                 <a href=""><i class="fa-brands fa-twitter"></i></a>
@@ -901,7 +812,7 @@
                             </div>
                         </div>
                         <div class="card-guides">
-                            <img src="./images/khoapug.jpg" alt="">
+                            <img src="./image/content img/khoapug.jpg" alt="">
                             <div class="contact-guides tours-guide-pic">
                                 <a href=""><i class="fa-brands fa-facebook-f"></i></a>
                                 <a href=""><i class="fa-brands fa-twitter"></i></a>
@@ -936,40 +847,41 @@
                             <div class="slider-partner-1">
                                 <div class="sile-card show">
                                     <div class="img-partner">
-                                        <img src="pic/vinh-ha-long-01.jpg" alt="" class="ipartner">
+                                        <img src="image/footer img/cdd.webp" alt="" class="ipartner">
                                     </div>
                                     <div class="infor-partner">
-                                        <h1 class="chu1">KHÁM PHÁ VIỆT NAM</h1>
-                                        <p class="chup">Vịnh Hạ Long <br>Vịnh Hạ Long, một trong những kỳ quan thiên
-                                            nhiên nổi tiếng của Việt Nam, nổi bật với làn nước màu ngọc bích và hàng
-                                            nghìn đảo đá vôi kỳ vĩ, là điểm đến lý tưởng cho những ai yêu thích thiên
-                                            nhiên và khám phá...
+                                        <h1 class="chu1">CHI DÂN</h1>
+                                        <p class="chup">Cảm ơn Vietravel đã cho mình một chuyến du lịch thật sự ý nghĩa,
+                                            gắn kết được tinh thần đồng đội và tình cảm anh em chúng tôi sau những ngày
+                                            làm việc bận rộn. Chúng tôi mong Vietravel sẽ có những HDV giỏi đa tài và
+                                            nhiệt…
                                             <a href="#" tabindex="0" class="chua">Read More</a>
                                         </p>
                                     </div>
                                 </div>
                                 <div class="sile-card show">
                                     <div class="img-partner">
-                                        <img src="pic/du-lich-sapa.jpg" alt="" class="ipartner">
+                                        <img src="image/footer img/qhmtd.jfif" alt="" class="ipartner">
                                     </div>
                                     <div class="infor-partner">
-                                        <h1 class="chu1">KHÁM PHÁ VIỆT NAM</h1>
-                                        <p class="chup">Sapa <br> Sapa nổi tiếng với những cảnh đẹp hùng vĩ của núi non,
-                                            cùng với những bản làng dân tộc thiểu số. Đây là điểm đến lý tưởng cho những
-                                            ai yêu thích du lịch mạo hiểm và trải nghiệm văn hóa vùng cao...
+                                        <h1 class="chu1">Lê Quang Hùng</h1>
+                                        <p class="chup">Bài thơ cảm nhận của khách hàng Lê Quang Hùng sau khi đi tour
+                                            Miền Trung - Vietravel đưa ta về với Huế, Cố đô xưa bao dấu ấn một thời,
+                                            Dòng Hương Giang in bóng chùa Thiên Mụ, Nét dịu dàng như cô gái…
                                             <a href="#" tabindex="0" class="chua">Read More</a>
                                         </p>
                                     </div>
                                 </div>
                                 <div class="sile-card show">
                                     <div class="img-partner">
-                                        <img src="pic/travel_hoi_an.jpg" alt="" class="ipartner">
+                                        <img src="image/footer img/nm.jfif" alt="" class="ipartner">
                                     </div>
                                     <div class="infor-partner">
-                                        <h1 class="chu1">KHÁM PHÁ VIỆT NAM</h1>
-                                        <p class="chup">Hội An <br> Hội An được biết đến với phố cổ đẹp như tranh vẽ,
-                                            những ngôi nhà cổ kính, và những con đường nhỏ xinh xắn. Đây là nơi tuyệt
-                                            vời để tìm hiểu về văn hóa và lịch sử của Việt Nam...
+                                        <h1 class="chu1">NGUYỄN THY NGỌC</h1>
+                                        <p class="chup">Cảm ơn Vietravel đã tạo điều kiện cho gia đình một chuyến du
+                                            lịch tại Phú Quốc thật vui vẻ, cảm ơn HDV Minh tại Hồ Chí Minh đã hỗ trợ thủ
+                                            tục và tiễn đoàn bay đến Phú Quốc, và cảm ơn HDV Phương tại Phú Quốc, đã
+                                            đồng…
                                             <a href="#" tabindex="0" class="chua">Read More</a>
                                         </p>
                                     </div>
@@ -994,25 +906,25 @@
                         </div>
                         <div class="slick-slider">
                             <div class="logo-partner">
-                                <img class="anh2" src="pic/logo-2.png" alt="">
+                                <img class="anh2" src="image/footer img/logo-2.png" alt="">
                             </div>
                             <div class="logo-partner">
-                                <img class="anh2" src="pic/trave.png" alt="">
+                                <img class="anh2" src="image/footer img/trave.png" alt="">
                             </div>
                             <div class="logo-partner">
-                                <img class="anh2" src="pic/logo-3.png" alt="">
+                                <img class="anh2" src="image/footer img/logo-3.png" alt="">
                             </div>
                             <div class="logo-partner">
-                                <img class="anh2" src="pic/timi.png" alt="">
+                                <img class="anh2" src="image/footer img/timi.png" alt="">
                             </div>
                             <div class="logo-partner">
-                                <img class="anh2" src="pic/logo-1.png" alt="">
+                                <img class="anh2" src="image/footer img/logo-1.png" alt="">
                             </div>
                             <div class="logo-partner">
-                                <img class="anh2" src="pic/logo-4.png" alt="">
+                                <img class="anh2" src="image/footer img/logo-4.png" alt="">
                             </div>
                             <div class="logo-partner">
-                                <img class="anh2" src="pic/around.png" alt="">
+                                <img class="anh2" src="image/footer img/around.png" alt="">
                             </div>
                         </div>
                     </div>
@@ -1142,6 +1054,59 @@
                     <p class="parmar ticket-info">Cần <a href="#">hỗ trợ ?</a></p>
                     <div class="clear"></div>
                 </div>
+            </div>
+        </div>
+
+
+        <div class="modal-info js-modal-info">
+            <div class="info-contain">
+                <h2 class="info-title">Mỗi ngày là một chuyến đi !</h2>
+
+                <div class="info-box">
+                    <div class="info-box-left">
+                        <h2 class="info-box-title">Miền Bắc</h2>
+                        <img src="image/content img/infobox1.webp" class="info-box-img" alt="">
+                    </div>
+                    <div class="info-box-right none-a">
+                        <p class="info-box-par">Thủ đô Hà Nội được mệnh danh là trái tim của nước ta. Mảnh đất này nổi
+                            bật với cảnh quan
+                            nên
+                            thơ; địa điểm tham quan phong phú đa dạng; ẩm thực độc đáo và con người hiền hậu, hiếu
+                            khách. Chính những yếu tố trên đã góp phần thúc đẩy du lịch phát triển vượt bậc với
+                            lượng
+                            khách ghé thăm đông đảo hằng năm. </p>
+                    </div>
+                </div>
+
+                <div class="info-box">
+                    <div class="info-box-left">
+                        <h2 class="info-box-title">Miền Trung</h2>
+                        <img src="image/content img/infobox2.jpg" class="info-box-img" alt="">
+                    </div>
+                    <div class="info-box-right none-a">
+                        <p class="info-box-par">Được thiên nhiên ưu ái ban cho những bãi biển đẹp trong xanh, nhiều danh
+                            lam thắng cảnh nổi
+                            tiếng, khu du lịch Bà Nà Hills ấn tượng, đặc biệt là dễ dàng di chuyển đến hàng loạt điểm du
+                            lịch hấp dẫn khác như Hội An, Cù Lao Chàm,... Còn chần chừ gì mà chưa kiểm tra lịch khởi
+                            hành tour du lịch Đà Nẵng
+                            cùng VietTravel dưới đây để lên kế hoạch cho kỳ nghỉ hấp dẫn? </p>
+                    </div>
+                </div>
+
+                <div class="info-box">
+                    <div class="info-box-left">
+                        <h2 class="info-box-title">Miền Nam</h2>
+                        <img src="image/content img/infobox3.jpg" class="info-box-img" alt="">
+                    </div>
+                    <div class="info-box-right none-a">
+                        <p class="info-box-par">Nếu Hà Nội được biết đến là thủ đô ngàn năm văn hiến với vẻ đẹp yên
+                            bình, trầm mạc cùng nhịp
+                            sống chậm rãi thì Sài Gòn lại là thành phố của những chuyển động, sự sôi nổi, sầm uất bậc
+                            nhất cả nước nhưng lại đan xen một chút cổ kính, một chút châu Âu giữa lòng Việt Nam.</p>
+                    </div>
+                </div>
+
+
             </div>
         </div>
     </div>
