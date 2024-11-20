@@ -24,7 +24,6 @@
             <div class="navbar-container">
                 <div class="logo-container">
                     <img class="logo-img" src="image/header img/Screenshot 2024-11-08 205924.png" alt="">
-
                 </div>
 
                 <ul class="navbar">
@@ -86,14 +85,15 @@
                                 </a></li>
 
                         </ul>
+
                     </li>
                     <li class="nav-child"><a class="none-a" href="#experienceplace">Trải nghiệm</a></li>
                     <li class="nav-child"><a class="none-a" href="#aboutus">Về chúng tôi</a></li>
 
-                    <li class="nav-child"><a class="none-a" href="">
+                    <li class="nav-child js-sign-btn"><a class="none-a" href="#">
                             <i class="ti-user"></i>
                         </a></li>
-                    <li class="nav-child"><a class="none-a" href="">
+                    <li class="nav-child"><a class="none-a" href="#buyplace">
                             <i class="ti-shopping-cart">
                             </i>
                         </a></li>
@@ -533,7 +533,7 @@
 
             <!-- section seller -->
 
-            <section class="box-seller">
+            <section class="box-seller" id="buyplace">
                 <div class="wrap-seller">
                     <div class="title-seller">
                         <h1>Điểm đến được quan tâm nhất năm 2023</h1>
@@ -1031,7 +1031,7 @@
             </footer>
 
         </div>
-
+        <!-- Modal cho Booking và Đặt ngay -->
         <div class="modal js-modal">
             <div class="ticket-contain js-modal-contain">
                 <div class="ticket-card">
@@ -1049,23 +1049,32 @@
                     <input class="ticket-input-form" type="tel">
 
 
-                    <button class="ticket-pay-btn">Thanh toán <i class="ti-check"></i></button>
+                    <button class="ticket-pay-btn js-pay-btn">Thanh toán <i class="ti-check"></i></button>
                     <button class="ticket-close-btn js-modal-close-btn">Close x</button>
                     <p class="parmar ticket-info">Cần <a href="#">hỗ trợ ?</a></p>
                     <div class="clear"></div>
                 </div>
             </div>
         </div>
-
-
-        <div class="modal-info js-modal-info">
+        <!-- Modal chúc mừng -->
+        <div class="modal js-modal-congrat">
+            <div class="modal-congrat-contain js-modal-congrat">
+                <h1 class="modal-congrat-title">
+                    Chúc mừng bạn !
+                </h1>
+            </div>
+        </div>
+        <!-- Modal cho khám phá -->
+        <div class="modal js-modal-info">
             <div class="info-contain">
                 <h2 class="info-title">Mỗi ngày là một chuyến đi !</h2>
 
                 <div class="info-box">
                     <div class="info-box-left">
                         <h2 class="info-box-title">Miền Bắc</h2>
-                        <img src="image/content img/infobox1.webp" class="info-box-img" alt="">
+                        <div class="info-container">
+                            <img src="image/content img/infobox1.webp" class="info-box-img" alt="">
+                        </div>
                     </div>
                     <div class="info-box-right none-a">
                         <p class="info-box-par">Thủ đô Hà Nội được mệnh danh là trái tim của nước ta. Mảnh đất này nổi
@@ -1081,7 +1090,9 @@
                 <div class="info-box">
                     <div class="info-box-left">
                         <h2 class="info-box-title">Miền Trung</h2>
-                        <img src="image/content img/infobox2.jpg" class="info-box-img" alt="">
+                        <div class="info-container">
+                            <img src="image/content img/infobox2.jpg" class="info-box-img" alt="">
+                        </div>
                     </div>
                     <div class="info-box-right none-a">
                         <p class="info-box-par">Được thiên nhiên ưu ái ban cho những bãi biển đẹp trong xanh, nhiều danh
@@ -1096,7 +1107,9 @@
                 <div class="info-box">
                     <div class="info-box-left">
                         <h2 class="info-box-title">Miền Nam</h2>
-                        <img src="image/content img/infobox3.jpg" class="info-box-img" alt="">
+                        <div class="info-container">
+                            <img src="image/content img/infobox3.jpg" class="info-box-img" alt="">
+                        </div>
                     </div>
                     <div class="info-box-right none-a">
                         <p class="info-box-par">Nếu Hà Nội được biết đến là thủ đô ngàn năm văn hiến với vẻ đẹp yên
@@ -1108,6 +1121,21 @@
 
 
             </div>
+        </div>
+        <!-- Modal đăng nhập tài khoản -->
+        <div class="modal js-modal-sign">
+            <div class="modal-sign-contain">
+                <form action="" class="form-sign">
+                    <h3 class="none-a">Tài khoản :</h3>
+                    <input type="text" placeholder="Email hoặc số điện thoại" class="sign-form">
+                    <h3 class="none-a">Mật khẩu :</h3>
+                    <input type="password" name="" id="matkhau" placeholder="Mật khẩu" class="sign-form">
+                    <div class="sign-form sign-btn js-sign-button">Đăng nhập</div>
+                    <a href="#" class="none-a found-sign">Đăng ký</a>
+                    <a href="#" class="none-a found-sign">Tìm tài khoản</a>
+                </form>
+            </div>
+
         </div>
     </div>
     <script src="animations/header.js"></script>

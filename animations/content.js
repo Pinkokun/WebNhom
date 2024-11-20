@@ -1,4 +1,4 @@
-// Đóng mở modal
+//Ticket modal
 // Lấy sự kiện diễn ra ( 3 nút js-buy-ticket) 
 // Các nút js-buy-ticket sẽ được lưu dưới dạng buyBtns
 const buyBtns = document.querySelectorAll('.js-buy-ticket')
@@ -37,8 +37,9 @@ modalContain.addEventListener('click', function () {
 // Lắng nghe hành vi click vào modalCloseBtn và thực hiện xuất ra closeTickets
 modalCloseBtn.addEventListener('click', closeTickets)
 
-//INFO MODAL
 
+
+//Thông tin modal
 const infoBtns = document.querySelectorAll('.info-btn'); // Use plural for clarity
 const modalInfoContain = document.querySelector('.js-modal-info');
 // Prevent event propagation inside the modal
@@ -46,25 +47,68 @@ modalInfoContain.addEventListener('click', function (event) {
     event.stopPropagation();
 });
 
-// Function to show the modal
 function showInfo() {
     modalInfoContain.classList.add('open');
 }
 
-// Function to close the modal
 function closeInfo() {
     modalInfoContain.classList.remove('open');
 }
 
-// Add event listener to close the modal
 modalInfoContain.addEventListener('click', closeInfo);
 
-// Add event listeners to all buttons in the NodeList
 infoBtns.forEach(btn => {
     btn.addEventListener('click', showInfo);
 });
 
-console.log(infoBtns);
+//Chúc mừng modal
+const payBtn = document.querySelector('.js-pay-btn')
+const modalCongratContain = document.querySelector('.js-modal-congrat')
+modalCongratContain.addEventListener('click', function (event) {
+    event.stopPropagation();
+});
+
+function showCongrat() {
+    modalCongratContain.classList.add('open');
+}
+
+function closeCongrat() {
+    modalCongratContain.classList.remove('open');
+}
+
+modalCongratContain.addEventListener('click', closeCongrat);
+payBtn.addEventListener('click', function () {
+    closeTickets();
+    showCongrat();
+})
+
+
+// Đăng ký modal
+const signBtn = document.querySelector('.js-sign-btn')
+const modalSignContain = document.querySelector('.js-modal-sign')
+const signButton = document.querySelector('.js-sign-button')
+
+
+function showSign() {
+    modalSignContain.classList.add('open');
+}
+
+function closeSign() {
+    modalSignContain.classList.remove('open');
+}
+
+signBtn.addEventListener('click', showSign);
+
+modalSignContain.addEventListener('click', function (event) {
+    if (event.target === modalSignContain) {
+        closeSign(); // Đóng modal nếu nhấn ra ngoài khu vực nội dung
+    }
+});
+signButton.addEventListener('click', function () {
+    closeSign();
+    showCongrat();
+});
 
 
 
+// 

@@ -993,19 +993,6 @@
 }
 
 
-.modal-info {
-    display: none;
-    top: 0;
-    left: 0;
-    z-index: 3;
-    position: fixed;
-    overflow: auto;
-    background-color: rgba(0, 0, 0, 0.8);
-
-    width: 100%;
-    height: 100%;
-}
-
 .info-contain {
     background-color: var(--header-brg);
     width: 900px;
@@ -1052,4 +1039,80 @@
 
 .info-box-par {
     margin-top: 30px;
+}
+
+.info-container {
+    width: 250px;
+    height: 140px;
+    overflow: hidden;
+
+}
+
+.info-container:hover .info-box-img {
+    scale: 120%;
+    transition: all 1.5s linear;
+}
+
+
+.modal-congrat-contain {
+    background-color: var(--header-brg);
+    width: 800px;
+    margin: auto;
+    position: relative;
+    box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2), 0 4px 20px 0 rgba(0, 0, 0, 0.19);
+    animation: modalFadeIn ease .5s;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    border-radius: 50px;
+    border: 2px solid var(--hover-feat);
+}
+
+.modal-congrat-title {
+    padding: 40px;
+
+    color: var(--form-text);
+}
+
+.modal-sign-contain {
+    background-color: var(--header-brg);
+    width: 350px;
+    height: 400px;
+    margin: auto;
+    position: relative;
+    box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2), 0 4px 20px 0 rgba(0, 0, 0, 0.19);
+    animation: modalFadeIn ease .5s;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    border-radius: 50px;
+    border: 2px solid var(--hover-feat);
+}
+
+.sign-form {
+    padding: 5px;
+    border-radius: 10px;
+    margin: 20px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--header-brg);
+    color: var(--form-text);
+}
+
+.sign-btn {
+    padding: 10px;
+    width: 200px;
+    background-color: var(--blue-color);
+    color: var(--li-color);
+}
+
+.sign-btn:hover {
+    color: var(--form-text);
+    background-color: var(--header-brg);
+}
+
+.found-sign {
+    color: var(--blue-color);
+    margin: 0 5px;
 }
