@@ -1110,6 +1110,7 @@
 .sign-btn:hover {
     color: var(--form-text);
     background-color: var(--header-brg);
+    border: 1px solid var(--form-text);
 }
 
 .found-sign {
