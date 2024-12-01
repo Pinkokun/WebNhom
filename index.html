@@ -1039,22 +1039,24 @@
                     <h2 class="ticket-heading head-mar"></i></i>Đặt vé</h2>
                     <span class="ticket-btn js-modal-close">x</span>
                 </div>
-                <div class="ticket-body">
+
+                <form action="" class="ticket-body">
                     <p class="par-mar"> <i class="fa-solid fa-vihara"></i></i> Địa điểm</p>
-                    <input class="ticket-input-form" type="text" placeholder="Hà Nội">
+                    <input class="ticket-input-form" type="text" placeholder="Hà Nội" required>
 
                     <p class="par-mar"> <i class="fa-solid fa-suitcase"></i></i> Gói dịch vụ</p>
-                    <input class="ticket-input-form" type="text" placeholder="Gói 3 ngày 2 đêm">
+                    <input class="ticket-input-form" type="text" placeholder="Gói 3 ngày 2 đêm" required>
 
                     <p class="par-mar"> <i class="fa-solid fa-phone"></i></i></i> Số điện thoại</p>
-                    <input class="ticket-input-form" type="tel">
+                    <input class="ticket-input-form" type="tel" required>
 
-
-                    <button class="ticket-pay-btn js-pay-btn">Thanh toán <i class="ti-check"></i></button>
+                    <input type="submit" name="thanhtoan" id="thanhtoan" class="ticket-pay-btn js-pay-btn" required
+                        value="Thanh toán">
+                    <!-- <button >Thanh toán <i class="ti-check"></i></button> -->
                     <button class="ticket-close-btn js-modal-close-btn">Close x</button>
                     <p class="parmar ticket-info">Cần <a href="#">hỗ trợ ?</a></p>
                     <div class="clear"></div>
-                </div>
+                </form>
             </div>
         </div>
         <!-- Modal chúc mừng -->
@@ -1128,10 +1130,12 @@
             <div class="modal-sign-contain">
                 <form action="" class="form-sign">
                     <h3 class="none-a">Tài khoản :</h3>
-                    <input type="text" placeholder="Email hoặc số điện thoại" class="sign-form">
+                    <input type="text" placeholder="Email hoặc số điện thoại" class="sign-form" required>
                     <h3 class="none-a">Mật khẩu :</h3>
-                    <input type="password" name="" id="matkhau" placeholder="Mật khẩu" class="sign-form">
-                    <div class="sign-form sign-btn js-sign-button">Đăng nhập</div>
+                    <input type="password" name="" id="matkhau" placeholder="Mật khẩu" class="sign-form" required>
+                    <!-- <div >Đăng nhập</div> -->
+                    <input type="submit" name="dangnhap" class="sign-form sign-btn js-sign-button" id="dangnhap"
+                        value=" Đăng nhập">
                     <a href="#" class="none-a found-sign">Đăng ký</a>
                     <a href="#" class="none-a found-sign">Tìm tài khoản</a>
                 </form>

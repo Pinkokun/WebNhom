@@ -76,11 +76,11 @@ function closeCongrat() {
     modalCongratContain.classList.remove('open');
 }
 
-modalCongratContain.addEventListener('click', closeCongrat);
-payBtn.addEventListener('click', function () {
-    closeTickets();
-    showCongrat();
-})
+// modalCongratContain.addEventListener('click', closeCongrat);
+// payBtn.addEventListener('click', function () {
+//     closeTickets();
+//     showCongrat();
+// })
 
 
 // Đăng ký modal
@@ -104,10 +104,10 @@ modalSignContain.addEventListener('click', function (event) {
         closeSign(); // Đóng modal nếu nhấn ra ngoài khu vực nội dung
     }
 });
-signButton.addEventListener('click', function () {
-    closeSign();
-    showCongrat();
-});
+// signButton.addEventListener('click', function () {
+//     closeSign();
+//     showCongrat();
+// });
 
 
 
