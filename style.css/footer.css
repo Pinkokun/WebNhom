@@ -10,7 +10,10 @@
 }
 
 
-
+.anh2{
+    width: 100px;
+    height: 34px;
+}
 
 .copyright {
     width: 100%;
@@ -101,7 +104,6 @@ footer {
     padding: 0;
     background-size: cover;
     object-fit: cover;
-    background: url(pic/bg-footer.png);
 }
 
 /* phan 2 */
@@ -225,6 +227,7 @@ footer {
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    background-color:   #ECDFCC;
 }
 
 /* phan dau cuar fooder */
@@ -261,7 +264,7 @@ footer {
 .chua {
     font-size: 21px;
     line-height: 36px;
-    color: #0bf30d;
+    color: #ADA075;
     text-decoration: none;
 }
 

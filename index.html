@@ -21,14 +21,15 @@
 
 <body>
     <div class="main">
+        <!-- HEADER -->
         <div class="header">
             <div class="navbar-container">
-                <div class="logo-container">
+                <a class="logo-container" href="#header">
                     <img class="logo-img" src="image/header img/Screenshot 2024-11-08 205924.png" alt="">
-                </div>
+                </a>
 
                 <ul class="navbar">
-                    <li class="nav-child pos-rev"><a class="none-a" href="">Trang chủ</a></li>
+                    <li class="nav-child pos-rev"><a class="none-a" href="#header">Trang chủ</a></li>
                     <li class="nav-child pos-rev"><a class="none-a" href="#loveplace">Điểm đến</a>
                         <ul class="subnav-spec ">
                             <li class="subnav-spec-child"><a class="none a" href="#loveplace">
@@ -106,55 +107,73 @@
                     </li>
                 </ul>
             </div>
-
         </div>
-        <div class="banner pos-rev">
-            <img class="banner-brg" src="image/header img/du-lich-sai-gon-topbanner.jpeg" alt="">
+        <!-- BANNER -->
+        <div class="container" id="header">
+            <div class="slide">
 
 
+                <div class="item"> <img src="image/header img/Banner/khach-du-lich-den-phu-quoc-kien-giang-1020.jpg"
+                        class="item" alt="">
+                    <div class="content">
+                        <div class="name">Phú Quốc</div>
 
-            <div class="feature-bar">
-                <ul class="feature-container">
-                    <li class="feature-child">
+                    </div>
+                </div>
 
-                        <a class="none-a" href="">
-                            <i class="icons-size fa-solid fa-person-snowboarding"></i>
-                            <p>Nhảy Bunngle</p>
-                        </a>
-                    </li>
-                    <li class="feature-child"><a class="none-a" href="#loveplace">
-                            <i class="icons-size fa-solid fa-city"></i>
-                            <p>Tham quan</p>
-                        </a></li>
-                    <li class="feature-child"><a class="none-a" href="#loveplace">
-                            <i class="icons-size fa-solid fa-person-hiking"></i>
-                            <p>Leo núi</p>
-                        </a></li>
 
-                    <li class="feature-child"><a class="none-a" href="#loveplace">
-                            <i class="icons-size fa-solid fa-person-biking"></i>
-                            <p>Xe máy địa hình</p>
-                        </a></li>
-                    <li class="feature-child"><a class="none-a" href="#loveplace">
-                            <i class="icons-size fa-solid fa-sailboat"></i>
-                            <p>Chèo thuyền</p>
-                        </a></li>
-                    <li class="feature-child"><a class="none-a" href="#loveplace">
-                            <i class="icons-size fa-solid fa-person-swimming"></i>
-                            <p>Lặn ngắm san hô</p>
-                        </a></li>
-                    <li class="feature-child"><a class="none-a" href="#loveplace">
-                            <i class="icons-size fa-solid fa-hippo"></i>
-                            <p>Tours Safari</p>
-                        </a></li>
-                </ul>
+                <div class="item"> <img class="item" src="image/header img/Banner/nha-tho-lon-ha-noi-1.webp" alt="">
+                    <div class="content">
+                        <div class="name">Nhà Thờ Hà Nội</div>
+
+                    </div>
+                </div>
+
+
+                <div class="item"> <img
+                        src="image/header img/Banner/1684725064-du-lich-ninh-binh-11-1685159274474-1685159275389752966949.webp"
+                        class="item" alt="">
+                    <div class="content">
+                        <div class="name">Ninh Bình</div>
+
+                    </div>
+                </div>
+
+                <div class="item"> <img class="item" src="image/header img/Banner/ur2mrg23d91mex03l4mw.jpeg" alt="">
+                    <div class="content">
+                        <div class="name">Cầu Vàng</div>
+
+
+                    </div>
+                </div>
+
+                <div class="item"> <img
+                        src="image/header img/Banner/du-lich-nha-trang-tet-2025-bo-tui-kinh-nghiem-du-lich-sieu-tiet-kiem-11-1522.jpg"
+                        class="item" alt="">
+                    <div class="content">
+                        <div class="name">Nha Trang</div>
+
+                    </div>
+                </div>
+
+                <div class="item"> <img src="image/header img/Banner/20180801-tphcm-182955-dji_0277_sine.jpg"
+                        class="item" alt="">
+                    <div class="content">
+                        <div class="name">TP.Hồ Chí Minh</div>
+
+                    </div>
+                </div>
+
+
+            </div>
+            <div class="button">
+                <button class="prev"><i class="fa-solid fa-arrow-left"></i></button>
+                <button class="next"><i class="fa-solid fa-arrow-right"></i></button>
             </div>
         </div>
 
-
-
         <!-- CONTENT -->
-        <div class="content">
+        <div class="content content-top">
             <section class="box-adventure" id="experienceplace">
                 <div class="wrap-adventure">
                     <div class="title-adventure">
@@ -526,10 +545,7 @@
                         </div>
                     </div>
                 </div>
-                <!-- <div class="select-service">
-                    <button class="btn-left">Browse by detination</button>
-                    <button class="btn-right">Browse by adventure</button>
-                </div> -->
+
             </section>
 
             <!-- section seller -->
@@ -830,17 +846,12 @@
 
         </div>
 
-
-
-
-
         <!-- FOOTER -->
         <div class="footer">
 
             <!-- phan 1 -->
             <div class="foodter">
                 <div class="box-main">
-                    <!-- <img src="pic/hinhvn.png" alt="" class="bmain"> -->
 
                     <div class="bmain"></div>
                     <div class="box-slider">
@@ -907,7 +918,7 @@
                         </div>
                         <div class="slick-slider">
                             <div class="logo-partner">
-                                <img class="anh2" src="image/footer img/logo-2.png" alt="">
+                                <img class="anh2" src="image/footer img/logo-1.png" alt="">
                             </div>
                             <div class="logo-partner">
                                 <img class="anh2" src="image/footer img/trave.png" alt="">
@@ -937,7 +948,7 @@
                     <div class="wrap-footer">
                         <div class="infor-more">
                             <div class="infor">
-                                <h3 class="chu3">Về</h3>
+                                <h3 class="chu3">Về VietTravel</h3>
                                 <ul class="chuul3">
                                     <li class="chuli3"><a class="chua3" href="">Công ty</a></li>
                                     <li class="chuli3"><a class="chua3" href="">Giá trị của chúng tôi</a></li>
@@ -958,28 +969,7 @@
                                     <li class="chuli3"><a class="chua3" href="">Phú Quốc</a></li>
                                 </ul>
                             </div>
-                            <div class="infor">
-                                <h3 class="chu3">Chủ Đề</h3>
-                                <ul class="chuul3">
-                                    <li class="chuli3"><a class="chua3" href="">Nông thôn</a></li>
-                                    <li class="chuli3"><a class="chua3" href="">Tuyết và băng</a></li>
-                                    <li class="chuli3"><a class="chua3" href="">Safari động vật hoang dã</a></li>
-                                    <li class="chuli3"><a class="chua3" href="">Chuyến đi săn</a></li>
-                                    <li class="chuli3"><a class="chua3" href="">Sa mạc</a></li>
-                                    <li class="chuli3"><a class="chua3" href="">Núi</a></li>
-                                </ul>
-                            </div>
-                            <div class="infor">
-                                <h3 class="chu3">Đặt chỗ</h3>
-                                <ul class="chuul3">
-                                    <li class="chuli3"><a class="chua3" href="">Điều kiện đặt phòng</a></li>
-                                    <li class="chuli3"><a class="chua3" href="">Đặt phòng của tôi</a></li>
-                                    <li class="chuli3"><a class="chua3" href="">Chính sách hoàn tiền</a></li>
-                                    <li class="chuli3"><a class="chua3" href="">Bao gồm & Không bao gồm</a></li>
-                                    <li class="chuli3"><a class="chua3" href="">Trách nhiệm của bạn</a></li>
-                                    <li class="chuli3"><a class="chua3" href="">Đặt mua một tờ rơi</a></li>
-                                </ul>
-                            </div>
+
                             <div class="infor">
                                 <h3 class="chu3">Hỏi VietTravel</h3>
                                 <ul class="chuul3">
@@ -1032,6 +1022,8 @@
             </footer>
 
         </div>
+
+        <!-- MODAL -->
         <!-- Modal cho Booking và Đặt ngay -->
         <div class="modal js-modal">
             <div class="ticket-contain js-modal-contain">
@@ -1134,7 +1126,7 @@
                     <h3 class="none-a">Mật khẩu :</h3>
                     <input type="password" name="" id="matkhau" placeholder="Mật khẩu" class="sign-form" required>
                     <!-- <div >Đăng nhập</div> -->
-                    <input type="submit" name="dangnhap" class="sign-form sign-btn js-sign-button" id="dangnhap"
+                    <input type="submit" name="dangnh   ap" class="sign-form sign-btn js-sign-button" id="dangnhap"
                         value=" Đăng nhập">
                     <a href="#" class="none-a found-sign">Đăng ký</a>
                     <a href="#" class="none-a found-sign">Tìm tài khoản</a>
