@@ -633,9 +633,6 @@
 
 /* Styling section seller */
 
-.box-seller {
-    background-color: #fafafa;
-}
 
 .box-seller .wrap-seller .content-seller {
     gap: 35px 25px !important;
@@ -947,6 +944,10 @@
     color: black;
 }
 
+.ticket-pay-btn:hover, .ticket-close-btn, .ticket-btn{
+    cursor: pointer;
+}
+
 .modal .ticket-input-form {
     width: 100%;
     padding: 8px;
@@ -959,6 +960,7 @@
     margin: 16px 0;
     width: 100%;
     border: none;
+    font-size: 20px;
 }
 
 .modal .ticket-close-btn {
@@ -1116,4 +1118,9 @@
 .found-sign {
     color: var(--blue-color);
     margin: 0 5px;
+}
+
+
+.content-top{
+    padding-top: 1000px;
 }

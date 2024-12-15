@@ -9,8 +9,10 @@
     justify-content: space-evenly;
 }
 
-
-
+.anh2 {
+    width: 100px;
+    height: 34px;
+}
 
 .copyright {
     width: 100%;
@@ -101,10 +103,11 @@ footer {
     padding: 0;
     background-size: cover;
     object-fit: cover;
-    background: url(pic/bg-footer.png);
 }
 
+
 /* phan 2 */
+
 .logo-partner:hover img {
     filter: invert(18%) sepia(5%) saturate(3990%) hue-rotate(17deg) brightness(91%) contrast(79%);
     transition: all 0.25s linear;
@@ -225,7 +228,9 @@ footer {
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    background-color: #FAFAFA;
 }
+
 
 /* phan dau cuar fooder */
 
@@ -261,7 +266,7 @@ footer {
 .chua {
     font-size: 21px;
     line-height: 36px;
-    color: #0bf30d;
+    color: #ADA075;
     text-decoration: none;
 }
 
@@ -350,7 +355,10 @@ footer {
 .bmain {
     position: relative;
     width: 100%;
-    background-color: var(--header-brg);
+    /* background-color: #ee3965; */
+    url(image/header img/Banner/cauvang.jpg);
+    url(image/header img/Banner/cauvang.jpg);
+    background-image: linear-gradient(62deg, #f6d365 0%, #fda085 100%);
 }
 
 .box-main {
@@ -369,4 +377,45 @@ footer {
     align-content: center;
     justify-content: center;
     flex-direction: column;
+}
+
+.sur {
+    text-align: center;
+    margin-top: 60px;
+    border-bottom: 1px dashed #956723;
+    padding-bottom: 45px;
+}
+
+.sur-text {
+    font-size: 35px;
+    color: #5C5A46;
+}
+
+.text-s {
+    font-size: 20px;
+    margin-top: 8px;
+    color: #5C5A46;
+}
+
+input#email {
+    margin-top: 35px;
+    padding: 10px;
+    padding-right: 120px;
+    border-radius: 10px;
+    font-weight: bold;
+    border: hidden;
+}
+
+.btn-nut {
+    padding: 10px;
+    padding-right: 12px;
+    border-radius: 12px;
+    color: #fff;
+    background-color: #956723;
+    font-weight: bold;
+    border: hidden;
+}
+
+.btn-nut:hover {
+    cursor: pointer;
 }
